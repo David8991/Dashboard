@@ -1,0 +1,171 @@
+.account {
+    content: url(images/account_white.svg);
+}
+
+main {
+    margin: 0 30px 0 230px;
+}
+
+main h1 {
+    font-size: 20px;
+    padding: 25px 0 50px;
+}
+
+.section-cont {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 60px;
+}
+
+.pink {
+    background-color: #c41a55;
+    box-shadow: 1px 1px 5px 1px grey;
+}
+
+.edit-profile {
+    width: 70%;
+}
+
+.edit-top {
+    padding: 15px;
+    transform: translateY(-30px);
+    color: white;
+}
+
+.edit-top p:first-child {
+    margin-bottom: 10px; 
+    font-size: 18px;
+}
+
+.edit-bottom, .item-1, .item-5, .item-10 {
+    display: grid;
+}
+
+.edit-bottom {
+    grid-template: repeat(6, 1fr) / 1fr;
+    gap: 10px;
+}
+
+.item-1, .item-10 {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.item-5 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid lightgrey;
+    outline: none;
+}
+
+label p, .user-info p:nth-of-type(1) {
+    font-size: 12px;
+}
+
+.edit-profile, .user-info {
+    background-color: white;
+    padding: 15px;
+    box-shadow: 2px 2px 5px 2px grey;
+}
+
+.user-info {
+    position: relative;
+    width: 30%;
+    text-align: center;
+    height: max-content;
+    padding-top: 80px;
+}
+
+.user-img {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.user-img img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.user-info p:nth-of-type(1) {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: grey;
+}
+
+.user-info p:nth-of-type(2){
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+textarea {
+    resize: none;
+    height: calc(100% - 16px);
+}
+
+.submit-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+input[type=submit] {
+    width: auto;
+    padding: 10px 50px;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+    .section-cont {
+        flex-direction: column-reverse;
+        gap: 60px;
+    }
+
+    .user-info, .edit-profile {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    main {
+        margin: 0 30px;
+    }
+
+    main h1 {
+        padding-left: 50px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    input[type=submit] {
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+
+    .edit-top p:first-child {
+        font-size: 16px;
+    }
+    
+    .edit-top p:last-child {
+        font-size: 14px
+    }
+}
+
+@media screen and (max-width: 370px) {
+    label p {
+        font-size: 10px;
+    }
+
+    .item-1, .item-10 {
+        gap: 15px;
+    }
+}

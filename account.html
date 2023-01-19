@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="account.css">
+    <link rel="stylesheet" href="manu.css">
+</head>
+<body>
+    <section class="menu-container">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+            <span></span>
+        </label>
+        <nav>
+            <p>Company</p>
+            <ul>
+                <li>
+                    <a href="dashboard.html">
+                        <img class="dashboard" src="images/dashboard_gray.svg" alt="Dashboard">
+                        Dashboard
+                    </a>
+                </li>
+                <li>
+                    <a class="account-container active" href="account.html">
+                        <img class="account" src="images/account_gray.svg" alt="User Profile">
+                        User Profile
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/map_gray.svg" alt="Maps">
+                        Maps
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/notify_gray.svg" alt="Notifications">
+                        Notifications
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/support_gray.svg" alt="Support">
+                        Support
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+    <main>
+        <h1>User Profile</h1>
+        <section class="section-cont">
+            <div class="edit-profile">
+                <div class="edit-top pink">
+                    <p>Edit Profile</p>
+                    <p>Complete your profile</p>
+                </div>
+                <form action="">
+                    <div class="edit-bottom">
+                        <div class="item-1">
+                            <label for="company" class="item-2">
+                                <p>Company</p>
+                                <input type="text" id="company">
+                            </label>
+                            <label for="username" class="item-3">
+                                <p>Username</p>
+                                <input type="text" id="username">
+                            </label>
+                            <label for="email" class="item-4">
+                                <p>Email address</p>
+                                <input type="email" id="email">
+                            </label>
+                        </div>
+                        <div class="item-5">
+                            <label for="firstName" class="item-6">
+                                <p>First name</p>
+                                <input type="text" id="firstName">
+                            </label>
+                            <label for="lastName" class="item-7">
+                                <p>Last name</p>
+                                <input type="text" id="lastName">
+                            </label>
+                        </div>
+                        <div class="item-8">
+                            <label for="address" class="item-9">
+                                <p>Address</p>
+                                <input type="text" id="address">
+                            </label>
+                        </div>
+                        <div class="item-10">
+                            <label for="city" class="item-11">
+                                <p>City</p>
+                                <input type="text" id="city">
+                            </label>
+                            <label for="country" class="item-12">
+                                <p>Country</p>
+                                <input type="text" id="country">
+                            </label>
+                            <label for="postalCode" class="item-13">
+                                <p>Postal code</p>
+                                <input type="number" id="postalCode">
+                            </label>
+                        </div>
+                        <div class="item-14">
+                            <label for="aboutMe" class="item-15">
+                                <p>About me</p>
+                                <textarea name="" id="aboutMe"></textarea>
+                            </label>
+                        </div>
+                        <div class="submit-container">
+                            <input class="pink" type="submit" value="Update profile">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="user-info">
+                <div class="user-img">
+                    <img src="images/avatar.jpg" alt="avatar">
+                </div>
+                <p>ceo / co-founder</p>
+                <p>Alec Thompson</p>
+                <p>
+                    Don't be scared of the truth because we need
+                    to restart the human foundation in truth And I
+                    love you like Kanye loves Kanye I love Rick
+                    Owens' bed design but the back is...
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#">Blog</a>
+            </li>
+            <li>
+                <a href="#">Licenses</a>
+            </li>
+        </ul>
+        <span>2019 - made with love</span>
+    </footer>
+</body>
+</html>
